@@ -1,0 +1,26 @@
+{
+	"name": "generator-hypeplugin",
+	"version": "0.0.0",
+	"description": "hypeJunction Elgg plugin Yeoman generator",
+	"files": [
+		"app"
+	],
+	"keywords": [
+		"yeoman-generator",
+		"elgg",
+		"plugin"
+	],
+	"author": {
+		"name": "Ismayil Khayredinov",
+		"email": "info@hypejunction.com",
+		"url": "https://github.com/hypeJunction"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/hypeJunction/generator-hypeplugin.git"
+	},
+	"dependencies": {
+		"yeoman-generator": "^0.20.3"
+	},
+	"license": "MIT"
+}

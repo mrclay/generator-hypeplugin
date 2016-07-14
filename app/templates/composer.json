@@ -1,0 +1,32 @@
+{
+	"name": "<%= userOpts.composerNamespace %>/<%= userOpts.composerId %>",
+	"type": "elgg-plugin",
+	"description": "<%= userOpts.pluginDescription %>",
+	"homepage": "http://hypejunction.com",
+	"keywords": [
+		"elgg",
+		"plugin",
+		<% userOpts.categories.forEach(function(category, index, array) { %>"<%= category.name %>"<% if (index < array.length-1) {%>,<% } %>
+		<% }); %>
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "<%= userOpts.pluginAuthor %>",
+			"email": "<%= userOpts.pluginAuthorEmail %>"
+		}
+	],
+	"require": {
+		"php": ">=5.5",
+		"composer/installers": "~1.0"
+	},
+	"required-dev": {
+		"elgg/elgg": "~<%= userOpts.requireElgg %>"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	}
+}
+

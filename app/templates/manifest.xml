@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+
+	<name><%= userOpts.pluginName %></name>
+	<id><%= userOpts.pluginId %></id>
+
+	<description><%= userOpts.pluginDescription %></description>
+	<% userOpts.categories.forEach(function(category) { %><category><%= category.name %></category>
+	<% }); %>
+	<version type="dist">0.0.0</version>
+
+	<author><%= userOpts.pluginAuthor %> (<%= userOpts.pluginAuthorEmail %>)</author>
+	<website><%= userOpts.website %></website>
+	<copyright>(c) <%= systemOpts.year %> <%= userOpts.pluginAuthor %></copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version><%= userOpts.requireElgg %></version>
+	</requires>
+	
+</plugin_manifest>
